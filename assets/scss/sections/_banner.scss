@@ -79,8 +79,11 @@
                 text-align: center;
                 border-radius: 50%;
                 font-size: 16px;
-                padding-left: 2px;
+                padding: 0;
                 z-index: 2;
+                border: none;
+                outline: none;
+                cursor: pointer;
             }
         }
         
