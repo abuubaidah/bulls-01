@@ -1,0 +1,46 @@
+/*==========================================
+    Contact
+==========================================*/
+.contact-area {
+    padding: 113px 0 120px;
+    .section-title {
+        margin-bottom: 47px;
+    }
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+    .part-form {
+        input {
+            width: 100%;
+            border: 1px solid #b8b8b8;
+            height: 60px;
+            margin-bottom: 20px;    
+            padding: 0 30px;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            border: 1px solid #b8b8b8;
+            padding: 17px 30px;
+        }
+        button {
+			height: 50px;
+			width: 150px;
+			text-align: center;
+			background: $base-color;
+			font-size: 14px;
+			font-weight: 600;
+			text-transform: capitalize;
+			color: $white;
+			border: 1px solid $base-color;
+            @include transition($transition);
+            cursor: pointer;
+            margin-top: 33px;
+			&:hover {
+				background: transparent;
+				color: $base-color;
+			}
+		}
+    }
+}

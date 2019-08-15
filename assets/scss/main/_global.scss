@@ -1,0 +1,138 @@
+.btn-hyipox {
+  display: inline-block;
+  height: 60px;
+  background: $white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 60px;
+  padding: 0 35px;
+  color: $base-color;
+  border-radius: 50px;
+  margin-top: 40px;
+}
+
+/*==========================================
+    section title
+==========================================*/
+.section-title {
+    margin-bottom: 53px;
+    span.small-text {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
+        color: #6ec25b;
+        margin-bottom: 16px;
+        display: inline-block;
+    }
+    h2 { 
+        font-size: 36px;
+        color: $heading-color;
+        margin-bottom: 23px;
+        font-weight: 700;
+        line-height: 48px;
+        &.remove-space {
+          margin-bottom: 7px;
+        }
+    }
+    p {
+        font-size: 16px;
+        color: $descr-color;
+    }
+}
+.c-white {
+    color: $white;
+}
+
+@media only screen and (max-width: 991px) {
+  .row.reorder-xs {
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    direction: rtl; }
+  .row.reorder-xs > [class*="col-"] {
+    -ms-transform: rotate(-180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-180deg);
+    direction: ltr; } }
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.row.homepage-about-xs {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  direction: rtl; }
+.row.homepage-about-xs > [class*="col-"] {
+  -ms-transform: rotate(-180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-180deg);
+  direction: ltr; } }
+
+
+/*==========================================
+    Preloader
+==========================================*/
+.preloader {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+}
+.loader {
+    position: absolute;
+    color: $base-color;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+.fa-bullseye {animation: bullseye 1s linear infinite;}
+
+@keyframes bullseye {
+  0% {transform: scale(1);}
+  15% {transform: scale(1.3);}
+  30% {transform: scale(1);}
+  45% {transform: scale(1.3);}
+  60% {transform: scale(1);} 
+}
+
+
+
+/*==========================================
+    scroll to top button
+==========================================*/
+.scroll-to-top {
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    display: inline-block;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    background: #052157;
+    border: 2px solid $white;
+    text-align: center;
+}
+.scroll-to-top a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    padding: 2px 0 0px 0;
+    display: inline-block;
+}
+.scroll-to-top a i {
+  color: $white;
+}

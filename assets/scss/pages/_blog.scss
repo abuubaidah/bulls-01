@@ -1,0 +1,70 @@
+/*==========================================
+    Blog
+==========================================*/
+.blog-page {
+	padding: 120px 0 60px;
+	.single-news {
+		margin-bottom: 53px;
+	}
+	.blog-details {
+		.part-text {
+			h3 {
+				font-size: 36px;
+				line-height: 48px;
+				margin-top: -3px;
+			}
+			p {
+				color: #666666;
+				line-height: 30px;
+			}
+		}
+	}
+	.comment-form {
+		h3 {
+			color: $heading-color;
+			font-size: 24px;
+			font-weight: 700;
+		    margin-bottom: 33px;
+		    margin-top: -10px;
+		}
+		form {
+			input {
+				border: 1px solid #c6c6c6;
+				height: 60px;
+				width: 100%;
+				padding: 0 25px;
+				margin-bottom: 30px;
+				font-size: 14px;
+				color: #666666;
+			}
+			textarea {
+				width: 100%;
+				padding: 18px 25px;
+				border: 1px solid #c6c6c6;
+				height: 120px;
+				font-size: 14px;
+				color: #666666;
+			}
+			button {
+				height: 45px;
+				width: 120px;
+				color: $white;
+				font-size: 14px;
+				font-weight: 700;
+				background: $base-color;
+				outline: none;
+				cursor: pointer;
+				margin-top: 33px;
+				border: 1px solid $base-color;
+				@include transition($transition);
+				&:hover {
+					background: transparent;
+					color: $base-color;
+				}
+			}
+		}
+	}
+}
+.blog-details-page {
+	padding-bottom: 120px;
+}
