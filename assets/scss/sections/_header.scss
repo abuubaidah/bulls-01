@@ -15,6 +15,22 @@
                 padding: 13px 0;
             }
         }
+        .user-panel {
+            text-align: right;
+            width: 100%;
+            span {
+                color: $white;
+                margin-right: 8px;
+                font-size: 14px;
+                a {
+                    &.login {
+                        display: inline-block;
+                        margin-right: 8px;
+                        color: $white;
+                    }
+                }
+            }
+        }
     }
     .bottom {
         background: rgba(255, 255, 255, 0.1);
@@ -32,11 +48,33 @@
                 padding: 0;
                 .navbar-nav {
                     .nav-item {
+                        &:hover, &.active {
+                            .nav-link {
+                                &:before {
+                                    height: 20px;
+                                    opacity: .7;
+                                }
+                            }
+                        }
                         .nav-link {
                             padding: 30px 15px;
                             display: inline-flex;
                             color: $white;
-                            text-transform: capitalize;
+                            text-transform: uppercase;
+                            position: relative;
+                            &:before {
+                                position: absolute;
+                                content: '';
+                                left: 50%;
+                                margin-left: -1px;
+                                bottom: 0;
+                                width: 3px;
+                                height: 0px;
+                                background: $white;
+                                border-radius: 34% 91% 12% 72%;
+                                opacity: 0;
+                                @include transition($transition);
+                            }
                         }
                         &.dropdown {
                             .dropdown-toggle {
@@ -51,16 +89,35 @@
                                     margin-left: 10px;
                                 }
                             }
+                            &:hover {
+                                .dropdown-menu {
+                                    visibility: visible;
+                                    opacity: 1;
+                                    margin-top: 0;
+                                }
+                            }
                         }
                         .dropdown-menu {
-                            padding: 0;
+                            padding: 8px 0px;
                             margin: 0;
                             border: none;
+                            border-radius: 0;
+                            border-top: 10px solid $base-color-2;
+                            border-bottom: 10px solid $base-color-2;
+                            box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+                            display: block;
+                            visibility: hidden;
+                            opacity: 0;
+                            @include transition($transition);
+                            margin-top: 20px;
                             .dropdown-item {
-                                padding: 0;
+                                padding: 4px 15px;
+                                font-size: 16px;
+                                color: $base-color-2;
+                                font-weight: 500;
                                 &:hover, &:focus &.active {
                                     background: transparent;
-                                    color: inherit;
+                                    color: $base-color-2;
                                 }
                             }
                         }
